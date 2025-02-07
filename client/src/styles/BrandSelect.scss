@@ -1,0 +1,22 @@
+.BrandSelect {
+  margin-bottom: 12px;
+
+  .DropdownContent {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .DropdownButton {
+    background: white;
+  }
+
+  .Brand {
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .DropdownButtonLabelWrapper {
+    text-align: left;
+  }
+}

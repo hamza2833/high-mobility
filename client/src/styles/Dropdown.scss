@@ -1,0 +1,97 @@
+@import 'config.scss';
+
+.Dropdown {
+  position: relative;
+  user-select: none;
+
+  .DropdownButton {
+    cursor: pointer;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: #6c757d;
+    font-weight: bold;
+    min-width: 130px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    transition: background-color 300ms ease;
+    z-index: $dropdownZ;
+    position: relative;
+
+    span {
+      margin-right: 10px;
+    }
+
+    &:hover,
+    &:active {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+    }
+  }
+
+  .DropdownChevron {
+    transition: transform 250ms ease;
+    transform-origin: center;
+  }
+
+  .DropdownButtonLabelWrapper {
+    position: relative;
+    width: calc(100% - 20px);
+  }
+
+  .DropdownContent {
+    position: absolute;
+    top: calc(100% + 10px);
+    background: white;
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    box-sizing: border-box;
+    box-shadow: 0px 15px 24px rgba(0, 0, 0, 0.11);
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+    overflow: hidden;
+  }
+
+  .DropdownItem {
+    position: relative;
+    cursor: pointer;
+    padding: 10px 30px 10px 20px;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: #6c757d;
+    transition: background-color 300ms ease;
+
+    &:hover {
+      background: #f7f8fc;
+    }
+
+    &.Selected {
+      background: #f7f8fc;
+    }
+
+    &.Disabled {
+      background: #e9ecef;
+    }
+  }
+
+  &.Open {
+    z-index: $dropdownOpenZ;
+
+    .DropdownChevron {
+      transform: rotate(180deg) translateY(2px);
+    }
+
+    .DropdownContent {
+      opacity: 1;
+    }
+  }
+}

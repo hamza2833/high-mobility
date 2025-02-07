@@ -1,0 +1,42 @@
+.InitialConfigPage {
+  .InitialConfigHeader {
+    background: white;
+    width: 100%;
+  }
+
+  .InitialConfigHeaderContent {
+    max-width: 928px;
+    margin: 0 auto;
+    padding: 90px 0 50px;
+  }
+
+  .InitialConfigContent {
+    max-width: 928px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .SubHeader {
+    color: #6c757d;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  .InputHeader {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .TokenInfo {
+    padding-left: 18px;
+
+    label {
+      margin-bottom: 10px;
+    }
+  }
+
+  .SubmitButton {
+    margin-top: 50px;
+  }
+}

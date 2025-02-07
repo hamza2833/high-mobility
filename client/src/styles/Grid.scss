@@ -1,0 +1,35 @@
+.Grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+  transition: margin 250ms ease;
+  pointer-events: none;
+
+  .GridItemContainer {
+    position: absolute;
+    overflow: hidden;
+    will-change: transform, width, height, opacity;
+    display: flex;
+    box-sizing: border-box;
+    pointer-events: all;
+  }
+
+  .GridItem {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  &.ListView,
+  &.MapView {
+    .GridItem {
+      padding: 5px 10px;
+    }
+  }
+
+  &.MapView {
+    margin-top: 20px;
+  }
+}

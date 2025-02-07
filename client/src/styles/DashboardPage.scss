@@ -1,0 +1,40 @@
+@import 'config';
+
+.DashboardPage {
+  width: 100%;
+  min-height: 100vh;
+
+  .DashboardMessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .DashboardMessageTitle {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 37px;
+      text-align: center;
+      color: #adb5bd;
+      margin-bottom: 14px;
+    }
+
+    .DashboardMessageButton {
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+      color: #037be7;
+      cursor: pointer;
+
+      &:hover {
+        color: #0375db;
+      }
+    }
+  }
+
+  .DashboardPageContent {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - #{$headerHeight});
+  }
+}

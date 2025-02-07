@@ -1,0 +1,19 @@
+@import 'config';
+
+.ErrorMessage {
+  text-align: center;
+  background: #df4747;
+  width: 100%;
+  color: white;
+  transition: opacity 500ms ease, visibility 500ms ease;
+  position: fixed;
+  top: $headerHeight;
+  left: 0;
+  z-index: $errorMessageZ;
+
+  &.Hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

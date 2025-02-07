@@ -1,0 +1,16 @@
+$primary: #037be7;
+$secondary: #90e0ef;
+$primaryAngular: conic-gradient(
+  from 180deg at 50% 50%,
+  #0085ff 0deg,
+  #90e0ef 360deg
+);
+$primaryLinear: linear-gradient(180deg, #90e0ef 0%, #0085ff 100%);
+
+$darkLow: #212529;
+$darkHigh: #495057;
+$grayLow: #6c757d;
+$grayMid: #adb5bd;
+$grayHigh: #ced4da;
+$lightLow: #e9ecef;
+$lightHigh: #f8f9fa;
